@@ -1,0 +1,55 @@
+body{
+    background-color:blue;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: x-large;
+}
+#INTRO{
+    background-color: #97D2FF;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Espacio entre las imágenes */
+    height: 20vh;
+}
+#UV{
+    width:100px;
+    height: 100px;
+}
+#FIEE{
+    width:100px;
+    height: 100px;
+}
+#TITLE{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10 vh;
+}
+#IO{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 40 vh;
+}
+input{
+    background-color: #97D2FF; 
+}
+#OPTIONS{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 20 vh;
+}
+select{
+    background-color: #97D2FF;
+}
+button{
+    background-color: #97D2FF;
+    width:75px;
+    height: 26px;
+}

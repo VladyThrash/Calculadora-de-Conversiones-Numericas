@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Calculadora de Conversiones Numericas</title>
+        <link rel="stylesheet" href="ns_calculator.css">
+    </head>
+    <body>
+        <section id="INTRO">
+            <div class="container">
+                <p></p> <! -- Vacio para obtener espacio -->
+                <img id="UV" src="logo_UV.png">
+                <h1>Universidad Veracruzana</h1>
+                <img id="FIEE" src="logo_FIEE.jpg">
+                <h1>Facultad de Ingeniería Eléctrica y Electrónica Región Veracruz</h1>
+            </div>
+                <h2 id="TITLE">CONVERSIONES ENTRE SISTEMAS NUMERICOS</h2>
+        </section>
+        <section id="CONTENT">
+            <div id="IO">
+                <p>
+                    <label for="codigo">Ingresa la cifra:</label>
+                    <input type="text" id="codigo" name="codigo"  oninput="this.value = this.value.toUpperCase().replace(/[^0-9A-F.]/g, '')">
+                    <label id="result" ></label> 
+                </p>
+            </div>
+            <div id="OPTIONS">
+                <p>
+                    <form>
+                        <label for="opciones">Conversiones:</label>
+                        <select id="opciones" name="opciones">
+                          <option value="D-B">Decimal - Binario</option>
+                          <option value="B-D">Binario - Decimal</option>
+                          <option value="D-H">Decimal - Hexadecimal</option>
+                          <option value="H-D">Hexadecimal - Decimal</option>
+                          <option value="D-O">Decimal - Octal</option>
+                          <option value="O-D">Octal - Decimal</option>
+                          <option value="B-H">Binario - Hexadecimal</option>
+                          <option value="H-B">Haxadecimal - Binario</option>
+                          <option value="B-O">Binario - Octal</option>
+                          <option value="O-B">Octal - Binario</option>
+                          <option value="H-O">Hexadecimal - Octal</option>
+                          <option value="O-H">Octal - Hexadecimal</option>
+                        </select>
+                    </form>
+                    <button id="i_button"><b>Convertir</b></button>
+                </p>
+            </div>
+        </section>
+        <script src="ns_calculator.js">
+        </script>
+    </body>
+</html>
